@@ -10,11 +10,9 @@ def n_queen(arr: list):
             attack_area[arr[i] - (len(arr) - i)] = True
 
     result = 0
-    for i in range(0, n):
+    for i in range(n):
         if not attack_area[i]:
-            copy_arr = arr.copy()
-            copy_arr.append(i)
-            result += n_queen(copy_arr)
+            result += n_queen(arr + [i])
 
     return result
 
