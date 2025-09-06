@@ -1,4 +1,4 @@
-x, y = map(lambda x: int(x) + 1, input().split(" "))
+x, y = map(lambda x: int(x) + 1, input().split())
 cut = [[False] * y, [False] * x]
 cut[0][-1] = cut[1][-1] = True
 

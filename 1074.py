@@ -15,5 +15,5 @@ def calc(n, x, y):
     return calc(half, x, y) + (half ** 2) * num
 
 
-n, r, c = map(int, input().split(" "))
+n, r, c = map(int, input().split())
 print(calc(2 ** n, c, r))
